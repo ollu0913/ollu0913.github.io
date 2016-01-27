@@ -15,9 +15,6 @@ section .outer_container { margin-bottom: 50px; background-color: #eee;  }
 section .row { margin-left: 0; margin-right: 0; overflow: hidden; }
 section h1 { text-transform: uppercase; color: white; margin-top: 0px; margin-bottom: 0px; line-height: 85px; text-align: center; }
 
-.templatemo_ceo img { margin-bottom: 10px; }
-.templatemo_ceo p { text-align: center; }
-
 .container { margin: 0 auto; }
 
 /*http://css-tricks.com/vertically-center-multi-lined-text/*/
@@ -28,8 +25,7 @@ section h1 { text-transform: uppercase; color: white; margin-top: 0px; margin-bo
 	NAVIGATION 
 --------------------------------------------------------*/
 nav { font-size: 1.2em; font-weight: lighter; }
-nav .fa { display: block; text-align: center; margin-bottom: 10px; }
-
+nav .fa { margin-bottom: 10px; margin-right: 5px;}
 .navbar {
 	background: #283147;
 	min-height: 65px;	
@@ -65,6 +61,9 @@ nav .fa { display: block; text-align: center; margin-bottom: 10px; }
 .navbar>.container .navbar-brand { margin-left: 0; }
 .navbar-collapse .navbar-nav.navbar-right:last-child { margin-right: 0; }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus { background-color: #394665; }
+
+.dropdown-menu {background: #283147;}
+.dropdown-menu>li>a{color: navajowhite;}
 
 /*------------------------------------------------------
 	FLEXSLIDER OVERRIDING 
@@ -125,78 +124,18 @@ nav .fa { display: block; text-align: center; margin-bottom: 10px; }
 	line-height: 90px;
 }
 
-.services_buttons  .icon-button:hover, .services_buttons  .icon-button.active {	background-color: #e98714; }
+.services_buttons  .icon-button:hover, .services_buttons  .icon-button.active {	background-color: #394665; }
 
-#services h1 { background-color: #e98714; }
-#services .col-md-2 { padding-right: 0; }
-#services .fa { line-height: 90px; }
+#consult h1 { background-color: #394665 }
+#consult .col-md-2 { padding-right: 0; }
+#consult .fa { line-height: 90px; }
 #services_content { height: 280px; }
 #services_content .tab-pane {  padding: 15px; }
 #services_content a { color: #FFFFFF; }
 
 /*http://cssarrowplease.com/*/
-.arrow-box { position: relative; color: white; background-color: #e98714; border-radius: 4px; margin-left: 30px; height: 100%;}
+.arrow-box { position: relative; color: white; background-color: #394665; border-radius: 4px; margin-left: 30px; height: 100%;}
 .arrow-left { display: block; width: 30px; height: 58px; background: url(../images/left_arrow.png) no-repeat 0 0; position: absolute; left: 1px; margin-top: 20px; }
-/*------------------------------------------------------
-Training Styles
---------------------------------------------------------*/
-#training h1 { background-color: limegreen; }
-/*------------------------------------------------------
-	Skills Styles 
---------------------------------------------------------*/
-.progress { background-color: black; border-radius: 0px; }
-.progress.vertical:last-of-type { margin-right: 0; }
-.progress-bar {	position:absolute; bottom:0; left:0; } /*http://stackoverflow.com/questions/2015032/align-divs-to-bottom-or-baseline*/
-.progress-label { position:absolute; width: 100%; bottom:0; }
-
-/*http://stackoverflow.com/questions/16318375/how-to-align-vertically-a-progress-bar-in-twitter-bootstrap*/
-.progress.vertical {
-    position: relative;
-    width: 19%;
-	margin-right: 1.2%; 
-    min-height: 240px;
-    float: left;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-    border: none;
-}
-
-#skills h1, .progress-bar { background-color: #e98714; }
-
-/*------------------------------------------------------
-	Portfolio Styles 
---------------------------------------------------------*/
-.portfolio-item:hover .overlay-p { transition: all 0.3s ease-in-out 0s; visibility: visible; opacity: 1; }
-.portfolio-thumb .overlay-p {
- 	background-color: rgba(0, 200, 200, 0.9);
- 	position: absolute; 
- 	visibility: hidden; 
- 	top: 0; 
- 	left: 0; 
- 	width: 100%; 
- 	height: 100%;  	
- 	opacity: 0;
- }
-.portfolio-thumb .overlay-p a { position: absolute; color: white; text-decoration: none; }
-
-#portfolio .col-md-4 { max-width: 206px; }
-#portfolio .row { margin: 0; }
-#portfolio h1 { background-color: #00c8c8; }
-#portfolio h2 { color: white; padding: 8% 4% 4% 4%; margin: 0; }
-#portfolio p { color: white; padding: 0 4% 4% 4%; margin: 0; font-size: .9em; }
-#portfolio_content .col-md-4 { padding: 0; }
-
-/*------------------------------------------------------
-	Blog Styles 
---------------------------------------------------------*/
-.blog_post { position: relative; float: left; width: 50%; }
-.blog_posts_container { max-width: 620px; }
-.blog_post h2 { position: absolute; background: #a8f662; color: white; top: 0; right: 0; padding: 10px 20px; margin: 0; text-align: center; }
-
-#blog .col-md-7 { padding-right: 46px; overflow: hidden; }
-#blog h1 { background-color: #a8f662; }
-
 /*------------------------------------------------------
 	Contact Styles 
 --------------------------------------------------------*/
@@ -231,8 +170,6 @@ footer .row { height: 100%; }
 .back_to_top { background-color: #c5454a; text-align: center; height: 41px; line-height: 41px; } /*http://stackoverflow.com/questions/2939914/vertically-align-text-in-a-div*/
 
 .social_buttons a {	text-decoration: none; }
-
-#templatemo_copyright { font-size: .9em; }
 
 /*------------------------------------------------------
 	BOOTSTRAP OVERRIDING 
@@ -269,9 +206,6 @@ footer .row { height: 100%; }
 	}
 	#about .col-md-7 { padding-left: 50px; }
 	#about .col-md-8 { padding-left: 20px; }
-	#team .col-md-7 { padding-right: 50px; }
-	#skills .col-md-7 { padding-right: 90px; }
-	#portfolio .col-md-7 { padding-left: 46px; }
 	#contact .col-md-7 { padding-left: 50px; }	
 }
 
@@ -283,9 +217,6 @@ footer .row { height: 100%; }
 	}
 	#about .col-md-7 { padding-left: 30px; }
 	#about .col-md-8 { padding-left: 20px; }
-	#team .col-md-7 { padding-right: 30px; }
-	#skills .col-md-7 { padding-right: 30px; }
-	#portfolio .col-md-7 { padding-left: 30px; }
 	#contact .col-md-7 { padding-left: 30px; }
 }
 
@@ -318,7 +249,6 @@ footer .row { height: 100%; }
 	.blog_post img { max-width: 100%; }
 	#about .col-md-8 { padding-left: 0; padding-bottom: 20px; }	
 	#about img { padding: 0; margin-top: 20px; margin-bottom: 20px; }
-	#team_content { width: 100%; }
 	#services .col-md-2, #services_content { padding-left: 0; padding-top: 20px; height: 300px; }
 	#services_tabs { padding-left: 10px; }
 	#portfolio .col-md-7, #blog .col-md-7, #contact .col-md-7 { padding-top: 20px; padding-left: 0; }	
